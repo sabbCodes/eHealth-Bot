@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+  color: rgb(60, 59, 59);
+}
+
+body,
+html{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+  margin: 80px auto 0;
+  width: 80vw;
+  height: 100vh;
+}
+
+.mainWrapper{
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 40px 40px 10px 40px;
+  margin: 0 auto;
+  background-color: #eef4ff;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.interactions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 70px;
+}
+
+.userMessage {
+  display: flex;
+  gap: 10px;
+}
+
+.botMessage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+}
+
+.userMessage img,
+.botMessage img {
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+  margin-bottom: 16px;
+  margin-right: 0;
+}
+
+.userMessageInner,
+.botMessageInner{
+  width: fit-content;
+  max-width: 80%;
+  background-color: #fff;
+  padding: 16px 20px;
+  border-radius: 16px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.smallText {
+  position: relative;
+  margin-left: 60px;
+}
+
+.smallText > small{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+}
+
+.mainForm{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 850px) {
+  .mainForm{
+    width: 70%;
+  }
+}
+
+.sendBtn{
+  margin: 0;
+  background: none;
+  border: 0;
+  transform: scale(1);
+  transition: ease-in-out .5s;
+}
+
+.sendBtn:hover,
+.sendBtn:active{
+  transform: scale(1.1);
+}
+
+input{
+  flex-grow: 1;
+  width: 90%;
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 120px;
+  outline: none;
+  color: #767676;
+  background-color: transparent;
+  border: 1px solid #919191;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+  margin: 10px;
+  text-align: start;
+}
+
+.userMessageInner > p,
+.botMessageInner > p{
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.interactions::-webkit-scrollbar {
+  width: 0;
+}
