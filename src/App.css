@@ -14,14 +14,13 @@ html{
 section{
   margin: 80px auto 0;
   width: 80vw;
-  height: 100vh;
 }
 
 .mainWrapper{
   width: 100%;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 40px 40px 10px 40px;
+  padding: 40px 40px 30px 40px;
   margin: 0 auto;
   background-color: #eef4ff;
   height: 83vh;
@@ -37,7 +36,6 @@ section{
   align-items: flex-end;
   flex-grow: 1;
   overflow-y: auto;
-  margin-bottom: 70px;
 }
 
 .userMessage {
@@ -89,6 +87,7 @@ section{
 .mainForm{
   display: flex;
   gap: 10px;
+  margin: 0 auto;
   width: 100%;
   z-index: 1;
 }
